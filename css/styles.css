@@ -110,3 +110,72 @@ button:hover, #label-file:hover {
 }
 
 }
+
+@media screen and (max-width:1030px) {
+    main {
+        background-position: right;
+        padding-right: 0%;
+        padding-bottom: 25%;
+        
+    }
+
+    #content {
+        width: 90%;
+
+        .actions {
+            justify-content: space-between;
+            width: 90%;
+            
+        }
+
+        textarea {
+            margin-bottom: 50px;
+            margin-top: 50px;
+            
+        }
+
+        #voice,  #listen-btn, button, #label-file {
+            font-size: 20px;
+            padding: 10px 15px;
+            background-color: #fff;
+            border:  1px solid #757575;
+            color: #757575;
+            border-radius: 25px;
+        }
+
+        #voice:hover, button:hover, #label-file:hover {
+            color: #000;
+            border:  1px solid #000;
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+    main {
+        padding-bottom: 0%;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:500px) {
+main {
+    background-position: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+}
