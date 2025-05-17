@@ -155,7 +155,7 @@ button:hover, #listen-btn:hover, #label-file:hover {
             border-radius: 25px;
         }
 
-        #voice:hover, button:hover, #label-file:hover, #listen-btn {
+        #voice:hover, button:hover, #label-file:hover, #listen-btn:hover {
             color: #000;
             border:  1px solid #d70505;
         }
@@ -189,5 +189,25 @@ main {
     textarea {
         width: 90%;
     }
+
+    #download-btn {
+        width: 85%;
+        margin-bottom: 15%;
+    }
+
+    #listen-btn {
+       width: 85%; 
+       margin-left: 15%;
+    }
+
+    .ouvir-o {
+        margin-left: 12%;
+    }
+
+    .arq {
+        margin-right: 12%;
+    }
+
+    
 
 }
