@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     font-family: "Kanit", sans-serif;
 }
 
 main {
@@ -68,11 +71,20 @@ input[type="file"] {
     width: 70%;
     margin-top: 5%;
 
+    .box1{
+        margin-right: 30px;
+    }
+
     .action-box {
         display: flex;
         flex-direction: column;
         gap: 30px;
         min-width: 200px;
+    }
+
+    .last-btn {
+        display: flex;
+        gap: 30px;
     }
 }
 
@@ -104,7 +116,7 @@ color: #000;
 border: 1px solid #fff;
 }
 
-button:hover, #label-file:hover {
+button:hover, #listen-btn:hover, #label-file:hover {
     color: #fff;
     border: 1px solid #fff;
 }
@@ -143,9 +155,9 @@ button:hover, #label-file:hover {
             border-radius: 25px;
         }
 
-        #voice:hover, button:hover, #label-file:hover {
+        #voice:hover, button:hover, #label-file:hover, #listen-btn {
             color: #000;
-            border:  1px solid #000;
+            border:  1px solid #d70505;
         }
     }
 }
