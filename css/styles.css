@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: "Kanit", sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 main {
@@ -43,22 +43,69 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width:70%;
-
-textarea {
     width: 70%;
-    height: 125px;
-    border: none;
-    border-radius: 5px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
-    font-size: 16px;
-    outline: none;
-    margin-bottom: 20px;
-    padding: 10px 0 0 10px;
+
+    textarea {
+        width: 70%;
+        height: 125px;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+        margin-bottom: 20px;
+        padding: 10px 0 0 10px;
+    }
+
+    #label-file {
+        display: flex;
+        align-items: center;
+        margin-left: 95px;
+        top: 30px;
+        justify-content: center;
+        border: 1px solid #757575;
+        border-radius: 15px;
+        min-width: 150px;
+        min-height: 50px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        cursor: pointer;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+
+    }
+
+    #label-file:active,
+#listen-btn:active,
+button:active {
+        border: 2px solid #6c5ce7;
+        color: #6c5ce7;
+        cursor: pointer;
+        animation: neon 1.5s infinite;
+
+    }
 }
+
+@keyframes neon {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px #6c5ce7;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #6c5ce7;
+    }
+}
+
 
 input[type="file"] {
     display: none;
@@ -71,7 +118,7 @@ input[type="file"] {
     width: 70%;
     margin-top: 5%;
 
-    .box1{
+    .box1 {
         margin-right: 30px;
     }
 
@@ -88,22 +135,24 @@ input[type="file"] {
     }
 }
 
-#voice, #listen-btn, button {
+#voice, #label-file,
+#listen-btn,
+button {
     font-size: 20px;
     padding: 10px 15px;
     background-color: transparent;
     border: 1px solid #757575;
     color: #757575;
     border-radius: 50px;
-     -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    -ms-border-radius:50px;
-    -o-border-radius:50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
     cursor: pointer;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
-    -ms-transition:1s;
+    -ms-transition: 1s;
     -o-transition: 1s;
 }
 
@@ -112,15 +161,15 @@ input[type="file"] {
 }
 
 #voice:hover {
-color: #000;
-border: 1px solid #fff;
-}
-
-button:hover, #listen-btn:hover, #label-file:hover {
-    color: #fff;
+    color: #000;
     border: 1px solid #fff;
 }
 
+button:hover,
+#listen-btn:hover,
+#label-file:hover {
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 @media screen and (max-width:1030px) {
@@ -128,7 +177,7 @@ button:hover, #listen-btn:hover, #label-file:hover {
         background-position: right;
         padding-right: 0%;
         padding-bottom: 25%;
-        
+
     }
 
     #content {
@@ -137,27 +186,33 @@ button:hover, #listen-btn:hover, #label-file:hover {
         .actions {
             justify-content: space-between;
             width: 90%;
-            
+
         }
 
         textarea {
             margin-bottom: 50px;
             margin-top: 50px;
-            
+
         }
 
-        #voice,  #listen-btn, button, #label-file {
+        #voice,
+        #listen-btn,
+        button,
+        #label-file {
             font-size: 20px;
             padding: 10px 15px;
             background-color: #fff;
-            border:  1px solid #757575;
+            border: 1px solid #757575;
             color: #757575;
             border-radius: 25px;
         }
 
-        #voice:hover, button:hover, #label-file:hover, #listen-btn:hover {
+        #voice:hover,
+        button:hover,
+        #label-file:hover,
+        #listen-btn:hover {
             color: #000;
-            border:  1px solid #d70505;
+            border: 1px solid #d70505;
         }
     }
 }
@@ -167,6 +222,11 @@ button:hover, #listen-btn:hover, #label-file:hover {
         padding-bottom: 0%;
     }
 
+    #label-file {
+        margin-right: 120px;
+        top: 30px;
+    }
+
     .actions {
         flex-direction: column;
         gap: 30px;
@@ -174,9 +234,10 @@ button:hover, #listen-btn:hover, #label-file:hover {
 }
 
 @media screen and (max-width:500px) {
-main {
-    background-position: center;
+    main {
+        background-position: center;
     }
+    
 
     h1 {
         font-size: 28px;
@@ -196,8 +257,8 @@ main {
     }
 
     #listen-btn {
-       width: 85%; 
-       margin-left: 15%;
+        width: 85%;
+        margin-left: 15%;
     }
 
     .ouvir-o {
@@ -208,6 +269,6 @@ main {
         margin-right: 12%;
     }
 
-    
+
 
 }
