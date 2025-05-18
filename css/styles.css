@@ -10,7 +10,7 @@
 main {
     width: 100%;
     min-height: 100vh;
-    background-image: url(/img/microphone.svg);
+    background-image: url(../img/microphone.svg);
     background-position: center;
     background-size: cover;
 
