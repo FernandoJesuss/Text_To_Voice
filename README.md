@@ -1,21 +1,12 @@
 # Text To Voice
 
-# Conversor de Texto para Voz
-![Text To Voice Projeto](https://pplx-res.cloudinary.com/image/private/user_uploads/19671341/01e02287-e3de-4b1b-a8d0-094165f1df23/screencapture-127-0-0-1-5500-index-html-2025-05-17-21_ice
+![site_cafeteria.svg](https://github.com/FernandoJesuss/Text_To_Voice/blob/main/img/hometexttovoice.svg)
 
-Descrição do Projeto
+[Link do Projeto]() <br>
 
-Funcionalidades
 
-Tecnologias Utilizadas
 
-Como Usar
-
-Estrutura de Arquivos
-
-Possíveis Melhorias
-
-Créditos
+Descrição do Projeto | Funcionalidades | Tecnologias Utilizadas | Como Usar | Estrutura de Arquivos | Possíveis Melhorias | Créditos
 
 # Descrição do Projeto
 O Conversor de Texto para Voz é uma aplicação web que permite ao usuário digitar ou enviar um texto, selecionar uma voz e ouvir a leitura desse texto. O objetivo é facilitar a conversão de texto escrito em áudio, tornando o conteúdo mais acessível para pessoas com deficiência visual ou para quem prefere consumir informações de forma auditiva.
@@ -30,10 +21,10 @@ Seleção de Voz: Opção para escolher a voz de leitura (exemplo: Microsoft Dan
 
 Ouvir Texto: Botão para ouvir o texto digitado ou enviado.
 
-Download: Opção para baixar o áudio gerado.
+Download: Opção para baixar o texto.
 
 # Tecnologias Utilizadas
-Frontend: HTML5, CSS3, JavaScript
+Frontend: HTML5| CSS3 | JavaScript
 
 APIs: Web Speech API (ou outra API de síntese de voz)
 
@@ -54,3 +45,15 @@ Para baixar o texto, clique em “Baixar Texto”.
 ├── style.css         # Estilos da interface
 ├── script.js         # Lógica de conversão e interação
 ├── assets/           # Imagens e outros recursos (ex: microfone)
+
+````
+# Possíveis Melhorias
+Suporte a múltiplos idiomas e vozes.
+
+Geração e download de arquivos em formato MP3.
+
+Histórico de textos convertidos.
+
+Interface adaptada para dispositivos móveis.
+
+Integração com serviços de nuvem para armazenar áudios gerados.
