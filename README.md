@@ -2,7 +2,7 @@
 
 ![site_cafeteria.svg](https://github.com/FernandoJesuss/Text_To_Voice/blob/main/img/hometexttovoice.svg)
 
-[Link do Projeto](https://fernandojesuss.github.io/Text_To_Voice/) <br>
+[Link do Projeto](https://to-text-to-voice.netlify.app/) <br>
 
 
 
